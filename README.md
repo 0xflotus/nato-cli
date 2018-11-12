@@ -7,4 +7,5 @@ Natify your Words to get the correct spelling
 
 # Build
 `yarn install`
+
 `yarn build`
