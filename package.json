@@ -1,9 +1,12 @@
 {
   "name": "nato-cli",
-  "version": "0.0.3",
+  "version": "0.0.3-gamma",
   "main": "index.js",
   "author": "0xflotus",
   "license": "MIT",
+  "engines": {
+    "node": ">=11.0.0"
+  },
   "bin": {
     "nato": "./nato-cli.js"
   },
@@ -12,7 +15,7 @@
     "url": "https://github.com/0xflotus/nato-cli.git"
   },
   "scripts": {
-    "build": "tsc ./index.ts"
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/node": "^10.12.5"
