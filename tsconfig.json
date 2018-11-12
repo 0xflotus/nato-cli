@@ -3,7 +3,10 @@
     "target": "es2018",
     "module": "es6",
     "declaration": true,
+    "declarationMap": true,
     "outDir": "./dist",
+    "removeComments": true,
+    "sourceMap": true,
     "strict": true
   }
 }

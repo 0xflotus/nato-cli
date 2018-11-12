@@ -1,6 +1,6 @@
 {
   "name": "nato-cli",
-  "version": "0.0.3-gamma",
+  "version": "0.0.3-delta",
   "main": "index.js",
   "author": "0xflotus",
   "license": "MIT",
@@ -19,8 +19,5 @@
   },
   "devDependencies": {
     "@types/node": "^10.12.5"
-  },
-  "dependencies": {
-    "nato": "^0.1.1"
   }
 }

@@ -1,10 +1,10 @@
-const Nato = require('nato')
-
-interface Letter {
-    text: string,
-    pronunciation: string
-}
+import { Alphabet } from './dictionary'
 
 process.argv.slice(2).forEach((val: string, index: number) => {
-  console.log(new Nato(val.toLowerCase()).natified.map((e: Letter) => e.text).join(' '));
+  val.split('').forEach((letter: string) => {
+    if (!/[a-zA-Z0-9]/.test(letter)) {
+      throw new Error(`No text for letter '${letter}'`)
+    } 
+    console.log(Alphabet.get(letter.toLowerCase()))
+  });
 });

@@ -1,5 +1,2 @@
-declare const Nato: any;
-interface Letter {
-    text: string;
-    pronunciation: string;
-}
+export {};
+//# sourceMappingURL=index.d.ts.map
