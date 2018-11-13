@@ -18,13 +18,13 @@
   "scripts": {
     "preinstall": "rm -rf ./node_modules",
     "lint": "tslint './src/**/*.ts'",
+    "increment": "yarn version --patch",
     "prebuild": "rm -rf ./dist",
     "build": "tsc"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint",
-      "pre-push": "yarn version --patch"
+      "pre-commit": "yarn lint"
     }
   },
   "devDependencies": {
