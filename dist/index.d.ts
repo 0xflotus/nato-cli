@@ -1,5 +1,5 @@
 declare const Nato: any;
-interface Letter {
+interface ILetter {
     text: string;
     pronunciation: string;
 }

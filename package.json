@@ -1,6 +1,6 @@
 {
   "name": "nato-cli",
-  "version": "0.0.6-hotfix",
+  "version": "0.0.7",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": "0xflotus",
@@ -18,9 +18,9 @@
   "scripts": {
     "preinstall": "rm -rf ./node_modules",
     "lint": "tslint './src/**/*.ts'",
-    "increment": "yarn version --patch",
     "prebuild": "rm -rf ./dist",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "yarn version --patch"
   },
   "husky": {
     "hooks": {
