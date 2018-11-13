@@ -18,6 +18,7 @@
   "scripts": {
     "preinstall": "rm -rf ./node_modules",
     "lint": "tslint './src/**/*.ts'",
+    "postinstall": "yarn build",
     "prebuild": "rm -rf ./dist",
     "build": "tsc"
   },
