@@ -16,6 +16,8 @@
     "url": "https://github.com/0xflotus/nato-cli.git"
   },
   "scripts": {
+    "lint": "tslint './src/**/*.ts'",
+    "prebuild": "rm -rf ./dist",
     "build": "tsc"
   },
   "devDependencies": {
