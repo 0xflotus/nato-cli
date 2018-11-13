@@ -24,7 +24,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint",
-      "pre-push": "yarn version --prerelease --preid beta"
+      "pre-push": "yarn version --patch"
     }
   },
   "devDependencies": {
