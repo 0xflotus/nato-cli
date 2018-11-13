@@ -1,5 +1,4 @@
 language: node_js
-
 node_js:
   - 11
   - 10
@@ -9,21 +8,18 @@ node_js:
   - 6
   - 5
   - 4
-  
 os:
   - linux
   - osx
-  
+notifications:
+  email: false
 cache:
   yarn: true
   directories:
     - node_modules
-    
 install:
   - yarn
-
 before_script: 
   - yarn global add nato-cli
-
 script:
-  - nato abcdefghijklmnOPQRSTu vwx yz
+  - nato abcdefghi jklmnOPQRSTu vwx yz
