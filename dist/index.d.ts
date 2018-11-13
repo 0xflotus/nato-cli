@@ -1,4 +1,4 @@
-declare const Nato: any;
+declare const nato: any;
 interface ILetter {
     text: string;
     pronunciation: string;
