@@ -14,12 +14,9 @@ os:
 notifications:
   email: false
 cache:
-  yarn: true
   directories:
     - node_modules
-install:
-  - yarn
 before_script: 
-  - yarn global add nato-cli
+  - npm i -g nato-cli
 script:
   - nato abcdefghi jklmnOPQRSTu vwx yz
