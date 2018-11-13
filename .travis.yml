@@ -1,0 +1,17 @@
+language: nodejs
+
+node_js:
+  - 11
+  - 10
+  - 9
+  - 8
+  
+os:
+  - linux
+  - osx
+
+before_script: 
+  - npm i -g nato-cli
+
+script:
+  - nato abcdefghijklmnOPQRSTu vwx yz
