@@ -1,17 +1,97 @@
 {
     "rules": {
         "max-line-length": {
-            "options": [120]
+            "options": [
+                120
+            ]
         },
         "new-parens": true,
         "no-arg": true,
         "no-bitwise": true,
         "no-conditional-assignment": true,
-        "no-consecutive-blank-lines": true
+        "no-consecutive-blank-lines": true,
+        "eofline": true,
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "linebreak-style": [
+            false,
+            "CRLF"
+        ],
+        "max-file-line-count": [
+            true,
+            2000
+        ],
+        "no-default-export": true,
+        "no-duplicate-imports": true,
+        "arrow-parens": [
+            true,
+            "ban-single-arg-parens"
+        ],
+        "class-name": true,
+        "comment-format": [
+            true,
+            "check-lowercase",
+            {
+                "ignore-words": [
+                    "TODO",
+                    "FIXME"
+                ]
+            }
+        ],
+        "interface-name": [
+            true
+        ],
+        "import-spacing": true,
+        "encoding": true,
+        "interface-over-type-literal": true,
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-operator",
+            "check-rest-spread"
+        ],
+        "no-boolean-literal-compare": false,
+        "no-trailing-whitespace": [
+            true,
+            "ignore-comments",
+            "ignore-blank-lines"
+        ],
+        "number-literal-format": true,
+        "one-line": [
+            true,
+            "check-else"
+        ],
+        "prefer-switch": [
+            true,
+            {
+                "min-cases": 2
+            }
+        ],
+        "prefer-while": true,
+        "quotemark": [
+            true,
+            "double",
+            "avoid-escape"
+        ],
+        "semicolon": [
+            true,
+            "never"
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-leading-underscore"
+        ]
     },
     "jsRules": {
         "max-line-length": {
-            "options": [120]
+            "options": [
+                120
+            ]
         }
     }
 }
