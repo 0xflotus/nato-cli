@@ -13,10 +13,9 @@ os:
   - osx
 notifications:
   email: false
-cache:
-  directories:
-    - node_modules
+install:
+  - yarn
 before_script: 
-  - npm i -g nato-cli
+  - yarn global add nato-cli
 script:
   - nato abcdefghi jklmnOPQRSTu vwx yz
