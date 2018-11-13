@@ -2,10 +2,12 @@
   "compilerOptions": {
     "target": "es2018",
     "module": "es6",
-    "declaration": true,
+    "declaration": false,
     "outDir": "./dist",
     "removeComments": true,
-    "sourceMap": true,
-    "strict": true
+    "sourceMap": false,
+    "strict": true,
+    "moduleResolution": "node",
+    "pretty": true
   }
 }
