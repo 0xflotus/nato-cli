@@ -7,6 +7,7 @@ Natify your Words to get the correct spelling
 # Dependencies
 * Node
 * Typescript
+* Tslint
 
 # Build
 `yarn install`
