@@ -1,6 +1,6 @@
 {
   "name": "nato-cli",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": "0xflotus",
@@ -9,7 +9,7 @@
     "node": ">=11.0.0"
   },
   "bin": {
-    "nato": "./nato-cli.js"
+    "nato": "./nato-cli"
   },
   "repository": {
     "type": "git",
