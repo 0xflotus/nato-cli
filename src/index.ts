@@ -1,7 +1,10 @@
-const nato = require("nato")
+import { dict1 } from "./dictionary"
 
-process.argv.slice(2).forEach((val: string, index: number) => {
+process.argv.slice(2).forEach((val: string) => {
   console.log(
-    new nato(val.toLowerCase()).natified.map((e: ILetter) => e.text).join(" ")
+    val
+      .split("")
+      .map((e: string) => dict1.get(e.toLowerCase())![0])
+      .join(" ")
   )
 })
