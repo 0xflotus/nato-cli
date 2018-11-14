@@ -1,0 +1,6 @@
+tslint.json
+tsconfig.json
+.prettierrc.yml
+.travis.yml
+src/
+yarn*
