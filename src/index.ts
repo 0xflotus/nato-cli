@@ -10,7 +10,7 @@ if (vOptions.indexOf(process.argv[2]) > -1) {
   process.argv.slice(2).forEach((val: string) => {
     console.log(
       /[^a-zA-Z]/.test(val)
-        ? chalk.red.bold(
+        ? chalk.red(
             `${
               osLocale.sync() === "de_DE"
                 ? "Es gibt nicht unterstuetzte Zeichen in"
