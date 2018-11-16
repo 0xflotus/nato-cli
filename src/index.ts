@@ -1,9 +1,10 @@
 import { dict1 } from "./dictionary"
 import { version } from "../package.json"
+import { version as vOptions } from "./options"
+import chalk from "chalk"
 const osLocale = require("os-locale")
-const chalk = require("chalk")
 
-if (["-v", "--version", "version"].indexOf(process.argv[2]) > -1) {
+if (vOptions.indexOf(process.argv[2]) > -1) {
   console.log(version)
 } else {
   process.argv.slice(2).forEach((val: string) => {
