@@ -1,6 +1,6 @@
 {
   "name": "nato-cli",
-  "version": "0.1.11",
+  "version": "0.1.17",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": "0xflotus",
@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "os-locale": "^3.0.1",
-    "pjson": "^1.0.9"
+    "os-locale": "^3.0.1"
   }
 }

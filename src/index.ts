@@ -1,10 +1,10 @@
 import { dict1 } from "./dictionary"
-const pjson = require("pjson")
+import { version } from "../package.json"
 const osLocale = require("os-locale")
 const chalk = require("chalk")
 
 if (["-v", "--version", "version"].indexOf(process.argv[2]) > -1) {
-  console.log(pjson.version)
+  console.log(version)
 } else {
   process.argv.slice(2).forEach((val: string) => {
     console.log(
