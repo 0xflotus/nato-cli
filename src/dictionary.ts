@@ -25,4 +25,4 @@ dict.set("w", ["Whiskey", "WISS-KEY"])
 dict.set("x", ["Xray", "ECKS-RAY"])
 dict.set("y", ["Yankee", "YANG-KEY"])
 dict.set("z", ["Zulu", "ZOO-LOO"])
-export const dict1 = dict
+export { dict }
