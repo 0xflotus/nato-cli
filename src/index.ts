@@ -1,4 +1,4 @@
-import { dict1 } from "./dictionary"
+import { dict } from "./dictionary"
 import { version } from "../package.json"
 import { version as vOptions } from "./options"
 import chalk from "chalk"
@@ -19,7 +19,7 @@ if (vOptions.indexOf(process.argv[2]) > -1) {
           )
         : val
             .split("")
-            .map((e: string) => dict1.get(e.toLowerCase())![0])
+            .map((e: string) => dict.get(e.toLowerCase())![0])
             .join(" ")
     )
   })
