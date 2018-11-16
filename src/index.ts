@@ -1,12 +1,17 @@
 import { dict1 } from "./dictionary"
+const pjson = require("pjson")
 
-process.argv.slice(2).forEach((val: string) => {
-  console.log(
-    /[^a-zA-Z]/.test(val)
-      ? `There are not supported characters in '${val}'`
-      : val
-          .split("")
-          .map((e: string) => dict1.get(e.toLowerCase())![0])
-          .join(" ")
-  )
-})
+if (["-v", "--version", "version"].indexOf(process.argv[2]) > -1) {
+  console.log(pjson.version)
+} else {
+  process.argv.slice(2).forEach((val: string) => {
+    console.log(
+      /[^a-zA-Z]/.test(val)
+        ? `There are not supported characters in '${val}'`
+        : val
+            .split("")
+            .map((e: string) => dict1.get(e.toLowerCase())![0])
+            .join(" ")
+    )
+  })
+}
