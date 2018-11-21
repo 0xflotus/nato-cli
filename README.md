@@ -8,7 +8,6 @@ Natify your Words to get the correct spelling
 * Node
 * Typescript
 * Tslint
-* Prettier
 
 # Build
 `yarn install`
