@@ -41,9 +41,7 @@
                 ]
             }
         ],
-        "interface-name": [
-            true
-        ],
+        "interface-name": true,
         "import-spacing": true,
         "encoding": true,
         "interface-over-type-literal": true,
