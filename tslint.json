@@ -12,9 +12,9 @@
         "no-consecutive-blank-lines": true,
         "eofline": true,
         "indent": [
-            true,
+            false,
             "spaces",
-            4
+            2
         ],
         "linebreak-style": [
             false,
