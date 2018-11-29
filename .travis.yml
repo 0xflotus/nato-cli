@@ -8,10 +8,7 @@ os:
   - linux
   - osx
   - windows
-dist:
-  - trusty
-  - bionic
-  - xenial
+dist: xenial
 notifications:
   email: false
 before_script: 
