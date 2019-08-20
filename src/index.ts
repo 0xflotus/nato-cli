@@ -11,16 +11,16 @@ if (vOptions.indexOf(process.argv[2]) > -1) {
     console.log(
       /[^a-zA-Z]/.test(val)
         ? chalk.red(
-            `${
-              osLocale.sync() === "de_DE"
-                ? "Es gibt nicht unterstuetzte Zeichen in"
-                : "There are not supported characters in"
-            } '${val}'`
-          )
+          `${
+          osLocale.sync() === "de_DE"
+            ? "Es gibt nicht unterstuetzte Zeichen in"
+            : "There are not supported characters in"
+          } '${val}'`
+        )
         : val
-            .split("")
-            .map((e: string) => dict.get(e.toLowerCase())![0])
-            .join(" ")
+          .split("")
+          .map((e: string) => dict.get(e.toLowerCase())![0])
+          .join(" ")
     )
   })
 }
